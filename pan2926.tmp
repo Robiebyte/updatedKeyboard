@@ -1,0 +1,64 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwfoc2m6lyxsl"]
+
+[ext_resource type="Script" path="res://Panel.gd" id="1_gtrm4"]
+
+[node name="Panel" type="Panel"]
+offset_left = -8.0
+offset_top = 1.0
+offset_right = 1153.0
+offset_bottom = 651.0
+script = ExtResource("1_gtrm4")
+
+[node name="ButtonA" type="Button" parent="."]
+layout_mode = 0
+offset_left = 413.0
+offset_top = 269.0
+offset_right = 692.0
+offset_bottom = 507.0
+text = "A"
+
+[node name="ButtonB" type="Button" parent="."]
+layout_mode = 0
+offset_left = 229.0
+offset_top = 275.0
+offset_right = 360.0
+offset_bottom = 347.0
+text = "B"
+
+[node name="ButtonC" type="Button" parent="."]
+layout_mode = 0
+offset_left = 731.0
+offset_top = 274.0
+offset_right = 893.0
+offset_bottom = 352.0
+text = "C"
+
+[node name="ButtonD" type="Button" parent="."]
+layout_mode = 0
+offset_left = 752.0
+offset_top = 383.0
+offset_right = 873.0
+offset_bottom = 475.0
+text = "D"
+
+[node name="ClearButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 235.0
+offset_top = 401.0
+offset_right = 356.0
+offset_bottom = 483.0
+text = "Clear"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 402.0
+offset_top = 188.0
+offset_right = 687.0
+offset_bottom = 239.0
+theme_override_colors/font_color = Color(0.686275, 0, 0, 1)
+
+[connection signal="pressed" from="ButtonA" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="ButtonB" to="." method="_on_ButtonB_pressed"]
+[connection signal="pressed" from="ButtonC" to="." method="_on_ButtonB_pressed"]
+[connection signal="pressed" from="ButtonD" to="." method="_on_ButtonB_pressed"]
+[connection signal="pressed" from="ClearButton" to="." method="_on_ClearButton_pressed"]
